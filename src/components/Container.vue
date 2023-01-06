@@ -24,17 +24,23 @@
         <textarea class="write-box" @input="$emit('post-memo', $event.target.value)">write!</textarea>
       </div>
     </div>
+
+    <div v-if="stepPage == 3">
+      <Mypage />
+    </div>
   </div>
 </template>
 
 <script>
 import Post from "./Post.vue";
 import FilterBox from "./FilterBox.vue";
+import Mypage from "./Mypage.vue";
 export default {
   name: "container",
   components: {
     Post,
-    FilterBox
+    FilterBox,
+    Mypage
   },
   data() {
     return  {

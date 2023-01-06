@@ -9,7 +9,6 @@
     </ul>
     <img src="./assets/logo.png" class="logo" />
   </div>
-{{name}}
   <!-- <p>{{ $store.state.moreDataNew }}</p>
   <button @click="$store.dispatch('getData')">more button</button> -->
 
@@ -50,7 +49,7 @@ export default {
   data() {
     return {
       // moreCount: 0,
-      step: 0,
+      step: 3,
       uploadImg: "",
       newMemo: "",
       uploadUrl: "",
